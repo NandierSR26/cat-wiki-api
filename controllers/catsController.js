@@ -23,7 +23,7 @@ const searchBreed = async (req, res = response) => {
     const result = breeds.data.map(breed => breed.name);
 
     if (!result.includes(breed)) {
-        return res.send({ error: "ingresa una de las razas sugeridas" })
+        return res.send("ingresa una de las razas sugeridas")
     }
 
     try {
