@@ -504,10 +504,26 @@ footer p:nth-child(2) {
     color: #291507;
 }
 
+@media (max-width: 1920px) {
+    .container .search-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 70vh;
+        padding: 30px 30px;
+        background-image: url(../assets/img/HeroImagelg.png);
+        background-position-x: center;
+        background-size: cover;
+        border-radius: 20px 20px 0 0;
+    }
+}
+
 @media (max-width: 1100px) {
     .container .search-section p {
         width: 100%;
-        font-size: 45px;
+        font-size: 35px;
         font-family: var(--Montserrat);
         color: #FFFFFF;
         line-height: 40px;
@@ -538,7 +554,7 @@ footer p:nth-child(2) {
     .container .search-section .box-input {
         display: flex;
         align-items: center;
-        width: 30%;
+        width: 40%;
         height: 50px;
         background-color: #FFFFFF;
         border-radius: 20px;
@@ -551,6 +567,20 @@ footer p:nth-child(2) {
         color: #291507;
         padding: 30px 0;
     }
+
+    .container .search-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 70vh;
+        padding: 30px 30px;
+        background-image: url(../assets/img/HeroImagelg.png);
+        background-position-x: center;
+        background-size: cover;
+        border-radius: 20px 20px 0 0;
+    }
 }
 
 @media (max-width: 1010px) {
@@ -560,6 +590,20 @@ footer p:nth-child(2) {
         font-family: var(--Montserrat);
         color: #FFFFFF;
         line-height: 40px;
+    }
+
+    .container .search-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 70vh;
+        padding: 30px 30px;
+        background-image: url(../assets/img/HeroImagelg.png);
+        background-position-x: center;
+        background-size: cover;
+        border-radius: 20px 20px 0 0;
     }
 }
 
@@ -602,6 +646,20 @@ footer p:nth-child(2) {
         flex-basis: 70%;
         margin-left: 70px;
     }
+
+    .container .search-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 70vh;
+        padding: 30px 30px;
+        background-image: url(../assets/img/HeroImagelg.png);
+        background-position-x: center;
+        background-size: cover;
+        border-radius: 20px 20px 0 0;
+    }
 }
 
 @media (max-width: 870px) {
@@ -628,6 +686,20 @@ footer p:nth-child(2) {
         height: 40px;
         background-color: #FFFFFF;
         border-radius: 20px;
+    }
+
+    .container .search-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 70vh;
+        padding: 30px 30px;
+        background-image: url(../assets/img/HeroImagelg.png);
+        background-position-x: center;
+        background-size: cover;
+        border-radius: 20px 20px 0 0;
     }
 }
 
@@ -664,6 +736,20 @@ footer p:nth-child(2) {
         font-size: 18px;
         color: rgba(41, 21, 7, 0.6);
         margin-top: 50px;
+    }
+
+    .container .search-section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        height: 70vh;
+        padding: 30px 30px;
+        background-image: url(../assets/img/HeroImagelg.png);
+        background-position-x: center;
+        background-size: cover;
+        border-radius: 20px 20px 0 0;
     }
 }
 
@@ -787,9 +873,10 @@ footer p:nth-child(2) {
 
     .container .search-section .box-input div {
         font-size: 18px;
-        width: 20%;
-        display: flex;
-        justify-content: center;
+        width: 50%;
+        font-size: 18px;
+        width: 80%;
+        margin-top: 10px;
     }
 
     .container .search-section .box-input {
@@ -827,6 +914,7 @@ footer p:nth-child(2) {
         align-items: center;
         margin-top: 30px;
     }
+
 }
 
 @media (max-width:350px) {
