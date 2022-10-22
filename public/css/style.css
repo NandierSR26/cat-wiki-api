@@ -47,19 +47,21 @@ h1 {
     position: relative;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    gap: 20px;
     width: 100%;
-    height: 70vh;
-    padding: 80px 70px;
-    background-image: url(../assets/img/HeroImagelg.png);
+    padding: 120px 70px;
+    height: fit-content;
+    background-image: url(../assets/img/HeroImagesm.png) !important;
     background-size: cover;
     background-position: center;
     border-radius: 20px 20px 0 0;
 }
 
 .container .search-section .banner-texts {
-    width: 60%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
 }
 
 .container .search-section .search-section-title {
@@ -67,15 +69,13 @@ h1 {
     letter-spacing: 0px;
     font-family: Mystery Quest;
     color: #FFFFFF;
-    margin-bottom: 60px;
 }
 
 .container .search-section p {
     width: 100%;
-    font-size: 58px;
+    font-size: 40px;
     font-family: var(--Montserrat);
     color: #FFFFFF;
-    line-height: 40px;
 }
 
 .container .search-section .box-input {
@@ -206,6 +206,7 @@ h1 {
     margin-right: 20px;
     width: 220px;
     height: 250px;
+    cursor: pointer;
 }
 
 .card img {
@@ -331,27 +332,25 @@ footer p:nth-child(2) {
 
 
 .container .about-breed {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    /* display: flex;
+    justify-content: center; */
     margin-top: 50px;
     margin-bottom: 80px;
+    display: grid;
+    grid-template-columns: 295px 1fr;
+    column-gap: 50px;
 }
 
 .container .about-breed .breed-photo {
-    width: 295.63px;
-    height: 295.63px;
+    width: 295px;
+    height: 295px;
     border-radius: 24px;
 }
 
 .container .about-breed .breed-photo img {
     width: 100%;
     height: 100%;
-}
-
-.container .about-breed .breed-info {
-    margin-left: 100px;
-    width: 45%;
+    border-radius: 24px;
 }
 
 .container .about-breed .breed-info h3 {
@@ -397,11 +396,11 @@ footer p:nth-child(2) {
 
 .specs-container .specs {
     display: block;
-    width: 35%;
+    width: fit-content;
 }
 
 .specs-container .levels {
-    width: 70%;
+    flex: 1;
     margin-top: 15px;
 }
 
@@ -502,453 +501,6 @@ footer p:nth-child(2) {
     font-size: 18px;
     line-height: 22px;
     color: #291507;
-}
-
-@media (max-width: 1920px) {
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        height: 70vh;
-        padding: 30px 30px;
-        background-image: url(../assets/img/HeroImagelg.png);
-        background-position-x: center;
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-    }
-}
-
-@media (max-width: 1100px) {
-    .container .search-section p {
-        width: 100%;
-        font-size: 35px;
-        font-family: var(--Montserrat);
-        color: #FFFFFF;
-        line-height: 40px;
-    }
-
-    .container .search-section .search-section-title {
-        font-size: 50px;
-        letter-spacing: 0px;
-        font-family: Mystery Quest;
-        color: #FFFFFF;
-        margin-bottom: 60px;
-    }
-
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        width: 100%;
-        height: 70vh;
-        padding: 80px 70px;
-        /* background-image: url(../assets/img/HeroImagelg.png); */
-        background-position-x: center;
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-    }
-
-    .container .search-section .box-input {
-        display: flex;
-        align-items: center;
-        width: 40%;
-        height: 50px;
-        background-color: #FFFFFF;
-        border-radius: 20px;
-    }
-
-    .most-wanted-section-text-2 {
-        font-family: var(--Montserrat);
-        font-weight: 700;
-        font-size: 30px;
-        color: #291507;
-        padding: 30px 0;
-    }
-
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        height: 70vh;
-        padding: 30px 30px;
-        background-image: url(../assets/img/HeroImagelg.png);
-        background-position-x: center;
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-    }
-}
-
-@media (max-width: 1010px) {
-    .container .search-section p {
-        width: 100%;
-        font-size: 30px;
-        font-family: var(--Montserrat);
-        color: #FFFFFF;
-        line-height: 40px;
-    }
-
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        height: 70vh;
-        padding: 30px 30px;
-        background-image: url(../assets/img/HeroImagelg.png);
-        background-position-x: center;
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-    }
-}
-
-@media (max-width: 993px) {
-    .container .motivation .motivation-texts h1 {
-        font-family: var(--Montserrat);
-        font-style: normal;
-        font-weight: 700;
-        font-size: 35px;
-        color: #291507;
-    }
-
-    .see-more {
-        font-family: var(--Montserrat);
-        font-style: normal;
-        font-weight: 700;
-        font-size: 15px;
-        color: rgba(41, 21, 7, 0.6);
-        margin-top: 100px;
-    }
-
-    .container .motivation .motivation-texts p {
-        font-family: var(--Montserrat);
-        font-style: normal;
-        font-weight: 500;
-        font-size: 15px;
-        line-height: 22px;
-        margin-top: 20px;
-    }
-
-    .container .motivation .motivation-texts {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 30%;
-        justify-content: space-around;
-    }
-
-    .container .motivation .grid-images {
-        display: flex;
-        flex-basis: 70%;
-        margin-left: 70px;
-    }
-
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        height: 70vh;
-        padding: 30px 30px;
-        background-image: url(../assets/img/HeroImagelg.png);
-        background-position-x: center;
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-    }
-}
-
-@media (max-width: 870px) {
-    .container .search-section .search-section-title {
-        font-size: 40px;
-        letter-spacing: 0px;
-        font-family: Mystery Quest;
-        color: #FFFFFF;
-        margin-bottom: 60px;
-    }
-
-    .container .search-section p {
-        width: 100%;
-        font-size: 20px;
-        font-family: var(--Montserrat);
-        color: #FFFFFF;
-        line-height: 40px;
-    }
-
-    .container .search-section .box-input {
-        display: flex;
-        align-items: center;
-        width: 35%;
-        height: 40px;
-        background-color: #FFFFFF;
-        border-radius: 20px;
-    }
-
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        height: 70vh;
-        padding: 30px 30px;
-        background-image: url(../assets/img/HeroImagelg.png);
-        background-position-x: center;
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-    }
-}
-
-@media (max-width: 830px) {
-    .card {
-        margin-right: 20px;
-        width: 210px;
-    }
-
-    .container .motivation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 70px;
-    }
-
-    .container .motivation .grid-images {
-        display: flex;
-        margin: 0px;
-    }
-
-    .container .motivation .motivation-texts {
-        display: flex;
-        flex-direction: column;
-        flex-basis: 30%;
-        justify-content: space-around;
-        margin-bottom: 50px;
-    }
-
-    .see-more {
-        font-family: var(--Montserrat);
-        font-style: normal;
-        font-weight: 700;
-        font-size: 18px;
-        color: rgba(41, 21, 7, 0.6);
-        margin-top: 50px;
-    }
-
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        height: 70vh;
-        padding: 30px 30px;
-        background-image: url(../assets/img/HeroImagelg.png);
-        background-position-x: center;
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-    }
-}
-
-@media (max-width: 700px) {
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        width: 100%;
-        height: 70vh;
-        padding: 30px 30px;
-        background-image: url(../assets/img/HeroImagelg.png);
-        background-position-x: center;
-        background-size: cover;
-        border-radius: 20px 20px 0 0;
-    }
-
-    .container {
-        padding: 0 40px;
-        margin-bottom: 50px;
-        min-height: 100vh;
-    }
-
-    footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: 85%;
-        height: 100px;
-        margin: 0 auto;
-        padding: 0 20px 0 30px;
-        background-color: #000000;
-        color: #FFFFFF;
-        border-radius: 50px 50px 0 0;
-    }
-}
-
-@media (max-width: 680px) {
-    .container .most-wanted-section {
-        width: 100%;
-        background-color: #E3E1DC;
-        padding: 20px 30px;
-        border-radius: 0px 0px 50px 50px;
-    }
-}
-
-@media (max-width: 600px) {
-    .card {
-        margin-right: 20px;
-        width: 150px;
-    }
-}
-
-@media (max-width: 500px) {
-
-    footer p:nth-child(1) {
-        font-family: 'Mystery Quest';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        color: #FFFFFF;
-    }
-
-    footer p:nth-child(2) {
-        font-family: 'Montserrat';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 12px;
-        color: #FFFFFF;
-    }
-
-    footer {
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        justify-content: space-around;
-        width: 85%;
-        height: 100px;
-        margin: 0 auto;
-        padding: 0 20px 0 30px;
-        background-color: #000000;
-        color: #FFFFFF;
-        border-radius: 50px 50px 0 0;
-    }
-}
-
-@media (max-width: 480px) {
-    .container-cards {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        width: 100%;
-    }
-
-    .card {
-        width: 240px;
-        margin-bottom: 30px;
-    }
-}
-
-@media (max-width: 450px) {
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 70vh;
-        padding: 30px 30px;
-        background-color: black !important;
-        border-radius: 20px 20px 0 0;
-    }
-
-    .container .search-section .banner-texts {
-        width: 100%;
-    }
-
-    .container .search-section .box-input div {
-        font-size: 18px;
-        width: 50%;
-        font-size: 18px;
-        width: 80%;
-        margin-top: 10px;
-    }
-
-    .container .search-section .box-input {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        height: 40px;
-        background-color: #FFFFFF;
-        border-radius: 20px;
-    }
-
-    .container .motivation .grid-images .image-3 {
-        width: 55%;
-        padding: 5px;
-    }
-
-    .container .motivation .grid-images .column-1 div {
-        width: 100%;
-        padding: 5px;
-    }
-
-    .container .motivation .grid-images .column-1 {
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        width: 50%;
-        height: 100%;
-    }
-
-    .container .most-wanted-section div:nth-child(1) div {
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 30px;
-    }
-
-}
-
-@media (max-width:350px) {
-    .container {
-        padding: 0 0px;
-        margin-bottom: 50px;
-        min-height: 100vh;
-    }
-
-    .container .search-section {
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        align-items: center;
-        width: 100%;
-        height: 70vh;
-        padding: 30px 30px;
-        background-color: black !important;
-        /* border-radius: 20px 20px 0 0; */
-    }
-
-    .container .motivation {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 70px;
-        padding: 0 20px;
-    }
-
-    .card {
-        width: 180px;
-        margin-bottom: 30px;
-    }
 }
 
 .none {

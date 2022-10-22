@@ -38,7 +38,6 @@ const searchBreed = async (req, res = response) => {
         if (existeCat) {
             const catSearches = await Cats.findOne({ id: resp.data[0].id });
             searches = catSearches.searches;
-            console.log(catSearches.searches);
 
             const totalSearches = catSearches.searches += 1;
 
